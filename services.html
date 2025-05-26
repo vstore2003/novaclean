@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | NovaClean Duct Services</title>
+  <style>
+  /* General page styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background: #f9f9f9;
+  }
+
+  h1, h2, h3 {
+    color: #1a1a1a;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.4em;
+  }
+
+  /* Hero Banner */
+  .hero-banner {
+    position: relative;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .banner-text {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+
+  .banner-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  }
+
+  .banner-text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+
+  /* Section Containers */
+  section {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Services Overview */
+  .services-overview p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+
+  /* Services Section */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: white;
+    padding: 1.8rem 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline-offset: 4px;
+  }
+
+  .service-card:hover,
+  .service-card:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    cursor: pointer;
+  }
+
+  .service-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  .service-card h3 {
+    color: #007BFF;
+    margin-bottom: 0.8rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+  .service-card ul {
+    list-style: disc inside;
+    padding-left: 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .service-card ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Benefits Section */
+  .service-benefits {
+    background: #e9f5ff;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.15);
+  }
+
+  .service-benefits ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #003366;
+  }
+
+  .service-benefits ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-benefits ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    top: 0;
+    line-height: 1;
+  }
+
+  /* Call To Action */
+  .cta {
+    text-align: center;
+    background: #007BFF;
+    color: white;
+    padding: 3rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+    margin: 4rem auto;
+    max-width: 700px;
+  }
+
+  .cta h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.85rem 2.2rem;
+    background-color: #0056b3;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 86, 179, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+    user-select: none;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #003d7a;
+    box-shadow: 0 8px 25px rgba(0, 61, 122, 0.7);
+    outline: none;
+  }
+
+  /* Accessibility: visible focus */
+  :focus-visible {
+    outline: 3px solid #007BFF;
+    outline-offset: 3px;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .hero-banner {
+      height: 220px;
+    }
+    .banner-text h1 {
+      font-size: 1.9rem;
+    }
+    .banner-text p {
+      font-size: 1rem;
+    }
+    .services {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<meta name="description" content="Experience the ultimate in indoor air quality with NovaClean, Halifax's trusted luxury duct cleaning and HVAC maintenance service." />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+    <header class="header" role="banner" aria-label="Main Navigation">
+    <div class="logo" tabindex="0">NovaClean</div>
+    <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="/index.html" tabindex="0">Home</a></li>
+        <li><a href="services.html" tabindex="0">Services</a></li>
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="#process" tabindex="0">Process</a></li>
+        <li><a href="#testimonials" tabindex="0">Testimonials</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-banner" aria-label="Services Banner" style="background-image: url('./images/service-banner.jpg');">
+      <div class="banner-text">
+        <h1>Our Professional Air Duct & HVAC Services</h1>
+        <p>Clean, safe, and healthy indoor air with NovaClean's expert services in Halifax.</p>
+      </div>
+    </section>
+
+    <section class="services-overview" aria-labelledby="services-intro">
+      <h2 id="services-intro" tabindex="0">Why Choose NovaClean?</h2>
+      <p tabindex="0">
+        At NovaClean, we are committed to improving your indoor air quality and HVAC system performance through eco-friendly, thorough, and certified duct cleaning and maintenance services. With over 10 years of trusted experience, our technicians use advanced equipment and proven methods to eliminate dust, allergens, mold, and contaminants, enhancing your comfort and health.
+      </p>
+    </section>
+
+    <section class="services" aria-label="Our Services">
+      <h2 tabindex="0">Our Exclusive Services</h2>
+
+      <article class="service-card" tabindex="0" aria-labelledby="service1-title" role="region">
+        <img src="./images/airduct.png" alt="Duct Cleaning Icon" />
+        <h3 id="service1-title">Premium Duct Cleaning</h3>
+        <p>Our comprehensive duct cleaning service removes built-up dust, allergens, and contaminants that reduce your HVAC efficiency and compromise air quality. Using state-of-the-art vacuum and brushing tools, we clean every duct thoroughly, promoting healthier air circulation and reducing allergy triggers.</p>
+        <ul>
+          <li>Improves indoor air quality</li>
+          <li>Enhances HVAC efficiency & reduces energy costs</li>
+          <li>Reduces dust and allergen buildup</li>
+        </ul>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-labelledby="service2-title" role="region">
+        <img src="./images/duct.png" alt="HVAC Maintenance Icon" />
+        <h3 id="service2-title">Comprehensive HVAC Maintenance</h3>
+        <p>Keep your HVAC system running at peak performance with our detailed inspection and tune-up services. We check filters, coils, motors, and other components to identify potential issues before they cause breakdowns, saving you costly repairs.</p>
+        <ul>
+          <li>Increases system lifespan</li>
+          <li>Prevents unexpected breakdowns</li>
+          <li>Improves energy efficiency</li>
+        </ul>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-labelledby="service3-title" role="region">
+        <img src="./images/3rd service.png" alt="Air Quality Testing Icon" />
+        <h3 id="service3-title">Advanced Air Quality Testing</h3>
+        <p>Our precise air quality assessments identify pollutants, mold spores, and allergens present in your home. We provide tailored recommendations based on test results to create a healthier living environment for your family.</p>
+        <ul>
+          <li>Detects harmful airborne particles</li>
+          <li>Custom solutions to improve air quality</li>
+          <li>Peace of mind with professional testing</li>
+        </ul>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-labelledby="service4-title" role="region">
+        <img src="./images/herosection.png" alt="Mold Inspection Icon" />
+        <h3 id="service4-title">Mold & Contaminant Inspection</h3>
+        <p>Mold can severely impact health and home integrity. Our expert inspection services identify hidden mold growth and other contaminants early, allowing for prompt remediation and safeguarding your home environment.</p>
+        <ul>
+          <li>Early detection of mold & contaminants</li>
+          <li>Reduces risk of respiratory issues</li>
+          <li>Protects home structure and your health</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="service-benefits" aria-labelledby="benefits-title">
+      <h2 id="benefits-title" tabindex="0">Benefits of Choosing NovaClean</h2>
+      <ul tabindex="0">
+        <li>Certified and experienced technicians</li>
+        <li>Eco-friendly, non-toxic cleaning methods</li>
+        <li>Flexible scheduling and prompt service</li>
+        <li>Transparent pricing with no hidden fees</li>
+        <li>Customer satisfaction guaranteed</li>
+      </ul>
+    </section>
+
+    <section class="cta" aria-label="Call to Action">
+      <h2 tabindex="0">Ready for Cleaner, Healthier Air?</h2>
+      <p tabindex="0">Book your service today or contact us for a free consultation. Our team is here to help you breathe easier.</p>
+      <a href="#contact" class="btn-primary" role="button">Schedule a Service</a>
+    </section>
+  </main>
+<section class="map" aria-label="Service Area Map">
+  <h2>Our Service Area</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.926975366086!2d-63.57291168425486!3d44.648798179099834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a2116a4d5b7db%3A0x647a3111b8585ed5!2sHalifax%2C%20NS!5e0!3m2!1sen!2sca!4v1685115214060!5m2!1sen!2sca"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</section>
+  <footer>
+  <footer role="contentinfo" aria-label="Site Footer" class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  </footer>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('primary-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
