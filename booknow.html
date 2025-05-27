@@ -90,12 +90,29 @@
   <meta name="description" content="Experience the ultimate in indoor air quality with NovaClean, Halifax's trusted luxury duct cleaning and HVAC maintenance service." />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
 
 </head>
 <body>
 
-  <header>
+   <header class="header" role="banner" aria-label="Main Navigation">
+    <div class="logo" tabindex="0">NovaClean</div>
+    <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="#home" tabindex="0">Home</a></li>
+        <li><a href="services.html" tabindex="0">Services</a></li>
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="booknow.html" tabindex="0">Process</a></li>
+        <li><a href="testimonials.html" tabindex="0">Testimonials</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
     <h1>Book a Service</h1>
     <p class="intro">Choose your desired service below and follow the simple booking process.</p>
   </header>
@@ -130,8 +147,10 @@
     </section>
 <section id="booking-form" style="margin-top: 3rem;">
   <h2 style="text-align:center; font-size: 2rem; margin-bottom: 1rem;">Book Your Appointment</h2>
-<form action="https://formsubmit.co/bobbyv1041@gmail.com" method="POST">
-  <input type="hidden" name="_next" value="https://vstore2003.github.io/novaclean/thankyou.html">
+  <form method="POST" action="https://formsubmit.co/bobbyv1041@gmail.com" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+
+    <!-- Optional: Redirect after submit & disable captcha -->
+    <input type="hidden" name="_next" value="https://vstore2003.github.io/novaclean/thankyou.html">
     <input type="hidden" name="_captcha" value="false">
 
     <label for="name" style="display:block; margin-bottom:0.5rem;">Full Name:</label>
@@ -186,7 +205,16 @@
     </nav>
   </div>
 </footer>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('primary-menu');
 
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
