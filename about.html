@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | NovaClean Duct Services</title>
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .hero-banner {
+      background-image: url('./images/about-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .banner-text {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .about-content p {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .mission-values {
+      background-color: #e9f5ff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
+    }
+
+    .mission-values h3 {
+      color: #007BFF;
+    }
+
+    .mission-values ul {
+      list-style: disc inside;
+      font-size: 1.05rem;
+      color: #003366;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .team-member {
+      background: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    }
+
+    .team-member img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      text-align: center;
+      background: #007BFF;
+      color: white;
+      padding: 3rem 1.5rem;
+      border-radius: 14px;
+      margin: 4rem auto;
+      max-width: 700px;
+    }
+
+    .btn-primary {
+      background-color: #0056b3;
+      padding: 0.8rem 2rem;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">NovaClean</div>
+    <nav class="navbar">
+       <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html" tabindex="0">Home</a></li>
+        <li><a href="services.html" tabindex="0">Services</a></li>
+        <li><a href="about.html" tabindex="0">About</a></li>
+        <li><a href="booknow.html" tabindex="0">Process</a></li>
+        <li><a href="testimonials.html" tabindex="0">Testimonials</a></li>
+        <li><a href="contact.html" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <div class="banner-text">
+        <h1>About NovaClean</h1>
+        <p>Delivering superior indoor air quality and HVAC care across Halifax for over a decade.</p>
+      </div>
+    </section>
+
+    <section class="section about-content">
+      <h2>Our Story</h2>
+      <p>NovaClean was founded with a mission to improve the air we breathe. With over 10 years of experience in duct cleaning and HVAC maintenance, we’ve built a reputation for thorough, professional, and reliable service. Based in Halifax, our locally owned business is committed to helping homeowners and businesses enjoy cleaner, healthier environments.</p>
+
+      <h2>Our Mission</h2>
+      <p>To provide top-tier air duct and HVAC services using environmentally friendly methods and cutting-edge technology—delivering results that truly improve quality of life.</p>
+    </section>
+
+    <section class="section mission-values">
+      <h2>Our Core Values</h2>
+      <ul>
+        <li>Customer-first service and transparent communication</li>
+        <li>Eco-friendly, non-toxic cleaning practices</li>
+        <li>Certified expertise and ongoing technician training</li>
+        <li>Quality assurance and satisfaction guarantees</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Meet the Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="./images/team1.jpg" alt="John - Lead Technician" />
+          <h3>John D.</h3>
+          <p>Lead Technician</p>
+        </div>
+        <div class="team-member">
+          <img src="./images/team2.jpg" alt="Emily - Customer Success" />
+          <h3>Emily R.</h3>
+          <p>Customer Success</p>
+        </div>
+        <div class="team-member">
+          <img src="./images/team3.jpg" alt="Mark - Operations" />
+          <h3>Mark T.</h3>
+          <p>Operations Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Want to Learn More?</h2>
+      <p>Contact us today or schedule a visit to experience the NovaClean difference.</p>
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
+    </section>
+  </main>
+ <footer>
+  <footer role="contentinfo" aria-label="Site Footer" class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </div>
+  </footer>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('primary-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
