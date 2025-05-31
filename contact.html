@@ -1,13 +1,154 @@
-<h2>Book a Cleaning</h2>
-<form action="mail.php" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="text" name="phone" placeholder="Phone Number" required>
-  <select name="service">
-    <option value="Air Duct Cleaning">Air Duct Cleaning</option>
-    <option value="Dryer Vent Cleaning">Dryer Vent Cleaning</option>
-    <option value="HVAC Inspection">HVAC Inspection</option>
-  </select>
-  <textarea name="message" placeholder="Additional details..."></textarea>
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | NovaClean Duct Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      color: #333;
+    }
+    header, footer {
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .contact-section {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+    .contact-section p {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    form input, form textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    form textarea {
+      grid-column: span 2;
+      resize: vertical;
+    }
+    button {
+      grid-column: span 2;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .contact-info {
+      margin-top: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      color: #003366;
+    }
+    .info-box {
+      flex: 1 1 250px;
+    }
+    .info-box h3 {
+      margin-bottom: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      button {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact NovaClean Duct Services</h1>
+  </header>
+
+  <main class="container">
+    <section class="contact-section">
+      <h1>We're Here to Help</h1>
+      <p>Need duct cleaning, appliance installation, or just have questions? Contact us and our friendly team will respond promptly!</p>
+
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-box">
+          <h3>📍 Our Office</h3>
+          <p>Truro, Halifax, Nova Scotia, Canada</p>
+        </div>
+        <div class="info-box">
+          <h3>📞 Phone</h3>
+          <p><a href="tel:+19025551234">+1 (902) 555-1234</a></p>
+        </div>
+        <div class="info-box">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:info@novaclean.ca">info@novaclean.ca</a></p>
+        </div>
+        <div class="info-box">
+          <h3>⏰ Business Hours</h3>
+          <p>Mon – Sat: 8:00 AM – 6:00 PM<br />Sunday: Closed</p>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.926975366086!2d-63.57291168425486!3d44.648798179099834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a2116a4d5b7db%3A0x647a3111b8585ed5!2sHalifax%2C%20NS!5e0!3m2!1sen!2sca!4v1685115214060!5m2!1sen!2sca"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
