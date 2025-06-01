@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaClean | Halifax's Premier Luxury Duct Cleaning Service</title>
+  <meta name="description" content="Experience the ultimate in indoor air quality with NovaClean, Halifax's trusted luxury duct cleaning and HVAC maintenance service." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    header, footer {
+      background-color: #111;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-color: #e8f0f9;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: -1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+    }
+
+    .price-box {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-left: 5px solid #00aaff;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #00aaff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0077cc;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header" role="banner" aria-label="Main Navigation">
+    <div class="logo" tabindex="0">NovaClean</div>
+    <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html" tabindex="0">Home</a></li>
+        <li><a href="services.html" tabindex="0">Services</a></li>
+        <li><a href="about.html" tabindex="0">About</a></li>
+        <li><a href="booknow.html" tabindex="0">Process</a></li>
+        <li><a href="testimonials.html" tabindex="0">Testimonials</a></li>
+        <li><a href="contact.html" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero">
+  <h1>Apartment Duct Cleaning</h1>
+  <p>Professional duct cleaning services designed specifically for apartment and condo living.</p>
+  <img src="../airduct.png" alt="Apartment Duct Cleaning" />
+</section>
+
+<section class="content">
+  <h2>Service Overview</h2>
+  <p>NovaClean offers specialized duct cleaning for apartments and multi-unit residences. We understand the layout and challenges of apartment HVAC systems, and our team uses compact, quiet equipment to minimize disruption while delivering superior air quality results.</p>
+
+  <h2>What’s Included</h2>
+  <ul>
+    <li>Full cleaning of in-unit ducts and vents</li>
+    <li>Sanitization of accessible HVAC components</li>
+    <li>Optional odor neutralization treatment</li>
+    <li>Service completed in 60–90 minutes</li>
+  </ul>
+
+  <div class="price-box">
+    <strong>Starting at $149 per unit</strong>
+  </div>
+
+  <a href="../booknow.html?service=Apartment%20Duct%20Cleaning" class="btn">Book This Service</a>
+</section>
+ <footer role="contentinfo" aria-label="Site Footer" class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('primary-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
