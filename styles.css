@@ -76,6 +76,56 @@ a {
 .nav-links li a:focus::after {
   width: 100%;
 }
+/* Categories Section */
+.categories {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #555;
+}
 
 /* Menu Toggle Button (Hamburger) */
 #menu-toggle {
