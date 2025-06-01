@@ -22,7 +22,63 @@
     margin: 0;
     background: #f9f9f9;
   }
-
+.services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+    .service-box img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .service-box h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+      color: #007BFF;
+    }
+    .service-box p {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #333;
+    }
+    .book-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.6rem;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+    }
+    .book-btn:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      .service-box img {
+        max-height: 140px;
+      }
+    }
   h1, h2, h3 {
     color: #1a1a1a;
     margin-top: 0;
