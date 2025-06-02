@@ -2,52 +2,55 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQTLZ90WH9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQTLZ90WH9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KQTLZ90WH9');
+  </script>
 
-  gtag('config', 'G-KQTLZ90WH9');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NovaClean | Halifax's Premier Luxury Duct Cleaning Service</title>
   <meta name="description" content="Experience the ultimate in indoor air quality with NovaClean, Halifax's trusted luxury duct cleaning and HVAC maintenance service." />
+
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header" role="banner" aria-label="Main Navigation">
     <div class="logo" tabindex="0">NovaClean</div>
     <nav class="navbar" role="navigation" aria-label="Primary Navigation">
       <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <ul id="primary-menu" class="nav-links">
-        <li><a href="index.html" tabindex="0">Home</a></li>
-        <li><a href="services.html" tabindex="0">Services</a></li>
-        <li><a href="about.html" tabindex="0">About</a></li>
-        <li><a href="booknow.html" tabindex="0">Book Now </a></li>
-        <li><a href="testimonials.html" tabindex="0">Testimonials</a></li>
-        <li><a href="contact.html" tabindex="0">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booknow.html">Book Now</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero" id="home" role="img" aria-label="Luxury duct cleaning service hero image with a clean HVAC vent">
-    <div class="hero-text" tabindex="0">
+  <!-- Hero Section -->
+  <section class="hero" id="home" role="img" aria-label="Luxury duct cleaning service hero image">
+    <div class="hero-text">
       <h1>Halifax’s Premier Luxury Duct Cleaning Service</h1>
       <p>Breathe easier with our state-of-the-art cleaning that guarantees fresher, healthier air for your home.</p>
-      <a href="#contact" class="btn" role="button" tabindex="0">Schedule Your Cleaning</a>
+      <a href="#contact" class="btn" role="button">Schedule Your Cleaning</a>
     </div>
   </section>
-  <!-- New Categories Section -->
+
+  <!-- Categories -->
   <section class="categories" id="categories" aria-label="Service Categories">
-    <h2 tabindex="0">Explore Our Categories</h2>
+    <h2>Explore Our Categories</h2>
     <div class="category-list">
       <div class="category-card">
         <img src="appliances.png" alt="Home Appliances Installation">
@@ -62,90 +65,142 @@
     </div>
   </section>
 
-
-
-  <section class="about" id="about" aria-label="About NovaClean">
-    <h2 tabindex="0">About NovaClean</h2>
-    <p tabindex="0">At NovaClean, we combine expert knowledge, cutting-edge technology, and eco-friendly methods to deliver the highest standard of indoor air quality services in Halifax. With over 10 years of experience, our certified technicians ensure your home’s air ducts and HVAC systems are spotless and safe.</p>
-    <p tabindex="0">We pride ourselves on transparency, punctuality, and customer satisfaction. Your health and comfort are our top priority.</p>
+  <!-- Why Choose Us -->
+  <section class="why-choose-us" aria-label="Why Choose NovaClean">
+    <h2>Why Choose NovaClean?</h2>
+    <ul class="benefits-list">
+      <li><i class="fas fa-star"></i> Over 10 Years of Experience</li>
+      <li><i class="fas fa-leaf"></i> Eco-Friendly Cleaning Products</li>
+      <li><i class="fas fa-users-cog"></i> Certified, Background-Checked Technicians</li>
+      <li><i class="fas fa-clock"></i> On-Time Appointments, Every Time</li>
+      <li><i class="fas fa-thumbs-up"></i> 100% Satisfaction Guarantee</li>
+    </ul>
   </section>
 
+  <!-- Before & After Gallery -->
+  <section class="before-after" aria-label="Before and After Duct Cleaning">
+    <h2>See the Difference</h2>
+    <div class="gallery">
+      <div class="image-pair">
+        <img src="before-duct.jpg" alt="Before duct cleaning - dusty vents">
+        <img src="after-duct.jpg" alt="After duct cleaning - spotless vents">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about" aria-label="About NovaClean">
+    <h2>About NovaClean</h2>
+    <p>At NovaClean, we combine expert knowledge, cutting-edge technology, and eco-friendly methods to deliver the highest standard of indoor air quality services in Halifax. With over 10 years of experience, our certified technicians ensure your home’s air ducts and HVAC systems are spotless and safe.</p>
+    <p>We pride ourselves on transparency, punctuality, and customer satisfaction. Your health and comfort are our top priority.</p>
+  </section>
+
+  <!-- Our Process -->
   <section class="process" id="process" aria-label="Our Cleaning Process">
-    <h2 tabindex="0">Our Step-By-Step Process</h2>
-    <ol class="steps" role="list">
-      <li tabindex="0" aria-labelledby="step1-title">
-        <h3 id="step1-title">Step 1: Schedule a Consultation</h3>
+    <h2>Our Step-By-Step Process</h2>
+    <ol class="steps">
+      <li>
+        <h3>Step 1: Schedule a Consultation</h3>
         <p>Book an appointment online or call us to set a convenient time.</p>
       </li>
-      <li tabindex="0" aria-labelledby="step2-title">
-        <h3 id="step2-title">Step 2: Comprehensive Inspection</h3>
+      <li>
+        <h3>Step 2: Comprehensive Inspection</h3>
         <p>Our experts conduct a detailed assessment of your ducts and HVAC system.</p>
       </li>
-      <li tabindex="0" aria-labelledby="step3-title">
-        <h3 id="step3-title">Step 3: Deep Cleaning & Treatment</h3>
+      <li>
+        <h3>Step 3: Deep Cleaning & Treatment</h3>
         <p>Using specialized equipment, we remove all dirt, mold, and allergens.</p>
       </li>
-      <li tabindex="0" aria-labelledby="step4-title">
-        <h3 id="step4-title">Step 4: Post-Cleaning Air Quality Test</h3>
+      <li>
+        <h3>Step 4: Post-Cleaning Air Quality Test</h3>
         <p>We verify the improvement with advanced air quality testing devices.</p>
       </li>
-      <li tabindex="0" aria-labelledby="step5-title">
-        <h3 id="step5-title">Step 5: Expert Maintenance Tips</h3>
+      <li>
+        <h3>Step 5: Expert Maintenance Tips</h3>
         <p>Receive personalized recommendations to keep your air system in top shape year-round.</p>
       </li>
     </ol>
   </section>
 
+  <!-- Testimonials -->
   <section class="testimonials" id="testimonials" aria-label="Customer Testimonials">
-    <h2 tabindex="0">What Our Clients Say</h2>
+    <h2>What Our Clients Say</h2>
     <div class="testimonial-list">
-      <blockquote tabindex="0" cite="https://www.example.com/reviews#client1">
+      <blockquote cite="#">
         <p>"NovaClean transformed our home's air quality. The team was professional and the service exceeded our expectations."</p>
         <footer>— Sarah M., Halifax</footer>
       </blockquote>
-
-      <blockquote tabindex="0" cite="https://www.example.com/reviews#client2">
+      <blockquote cite="#">
         <p>"Highly recommend NovaClean! Their attention to detail and eco-friendly approach made all the difference."</p>
         <footer>— Mark T., Dartmouth</footer>
       </blockquote>
-
-      <blockquote tabindex="0" cite="https://www.example.com/reviews#client3">
+      <blockquote cite="#">
         <p>"Our HVAC system runs smoother and our allergies have improved significantly after their cleaning service."</p>
         <footer>— Emily R., Bedford</footer>
       </blockquote>
     </div>
   </section>
 
- <section class="contact" id="contact" aria-label="Contact NovaClean">
-  <h2 tabindex="0">Contact Us</h2>
-  <p tabindex="0">Have questions or want to book a service? Reach out today!</p>
-  <address tabindex="0">
-    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+16042454343">+1 (604) 245-4343</a></p>
-    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:novaairductcleaning1@gmail.com">info@novaclean.ca</a></p>
-  </address>
-</section>
+  <!-- Certifications -->
+  <section class="certifications" aria-label="Certifications and Affiliations">
+    <h2>Certified & Trusted</h2>
+    <p>We are proud members of industry-leading organizations and fully certified in HVAC hygiene and air quality management.</p>
+    <div class="cert-logos">
+      <img src="nadca-logo.png" alt="NADCA Member" />
+      <img src="bbb-logo.png" alt="BBB Accredited" />
+      <img src="eco-safe-logo.png" alt="Eco-Safe Certified" />
+    </div>
+  </section>
 
+  <!-- Tips Section -->
+  <section class="home-tips" aria-label="Home Air Quality Tips">
+    <h2>Air Quality Tips</h2>
+    <ul>
+      <li><strong>Change filters regularly:</strong> Every 1–3 months depending on use.</li>
+      <li><strong>Inspect vents for mold:</strong> Especially in basements and bathrooms.</li>
+      <li><strong>Keep vents clear:</strong> Avoid blocking airflow with furniture.</li>
+    </ul>
+    <a href="blog.html" class="read-more">More Tips & Insights →</a>
+  </section>
 
-  <footer role="contentinfo" aria-label="Site Footer" class="site-footer">
-  <div class="footer-content">
-    <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <ul class="footer-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+  <!-- Call-To-Action Banner -->
+  <section class="cta-banner" aria-label="Book a Service">
+    <h2>Ready for Fresher Air?</h2>
+    <p>Get your ducts cleaned by Halifax’s trusted professionals.</p>
+    <a href="booknow.html" class="btn">Book Your Cleaning Today</a>
+  </section>
 
-    <script>
+  <!-- Contact Section -->
+  <section class="contact" id="contact" aria-label="Contact NovaClean">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to book a service? Reach out today!</p>
+    <address>
+      <p><i class="fas fa-phone"></i> <a href="tel:+16042454343">+1 (604) 245-4343</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:info@novaclean.ca">info@novaclean.ca</a></p>
+    </address>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site Footer">
+    <div class="footer-content">
+      <p>&copy; 2025 NovaClean Duct Services. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('primary-menu');
-
     menuToggle.addEventListener('click', () => {
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
       menuToggle.setAttribute('aria-expanded', !expanded);
       navLinks.classList.toggle('active');
     });
