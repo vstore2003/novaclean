@@ -18,6 +18,214 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* General Reset & Fonts */
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #eaf6ff, #ffffff);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 60px 0 30px;
+  color: #004a80;
+}
+
+/* Categories */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: #f0f8ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.benefits-list li {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.benefits-list i {
+  color: #0077cc;
+  font-size: 1.2rem;
+}
+
+/* Gallery */
+.before-after .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-pair img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-pair img:hover {
+  transform: scale(1.03);
+}
+
+/* Certifications */
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.cert-logos img {
+  height: 60px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.cert-logos img:hover {
+  filter: none;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 0;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Tips Section */
+.home-tips ul {
+  list-style: disc;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.home-tips li {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-list, .before-after .gallery, .cert-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-pair img {
+    width: 90%;
+  }
+}
+
+  </style>
 </head>
 <body>
 
